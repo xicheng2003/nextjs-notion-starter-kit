@@ -11,14 +11,15 @@ export default siteConfig({
   // basic site info (required)
   name: 'Morlight Blog',
   domain: 'https://www.notion.so/e57ccf9dfbcc45aa933e734a4aa1e841',
-  author: 'Michael',
+  author: 'Michael Lin',
 
   // open graph metadata (optional)
   description: 'Example Next.js Notion Starter Kit Site',
 
   // social usernames (optional)
   //twitter: 'transitive_bs',
-  github: 'transitive-bullshit',
+  bilibili: '147530525',
+  github: 'xicheng2003',
   linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
