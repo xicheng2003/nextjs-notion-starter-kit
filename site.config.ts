@@ -10,7 +10,7 @@ export default siteConfig({
 
   // basic site info (required)
   name: 'Morlight Blog',
-  domain: 'https://www.notion.so/e57ccf9dfbcc45aa933e734a4aa1e841',
+  domain: 'https://morlight.top',
   author: 'Michael Lin',
 
   // open graph metadata (optional)
