@@ -17,7 +17,7 @@ export default siteConfig({
   description: 'Example Next.js Notion Starter Kit Site',
 
   // social usernames (optional)
-  twitter: 'transitive_bs',
+  //twitter: 'transitive_bs',
   github: 'transitive-bullshit',
   linkedin: 'fisch2',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
@@ -50,7 +50,18 @@ export default siteConfig({
 
   // whether to use the default notion navigation style or a custom one with links to
   // important pages
-  navigationStyle: 'default'
+  //navigationStyle: 'default'
+   navigationStyle: 'custom',
+   navigationLinks: [
+     {
+       title: 'About',
+       pageId: 'a0046fa778e640728f429504fa632637'
+     },
+     {
+       title: 'Contact',
+       pageId: '6726a7bca83d4997b15ff5c6846fcad9'
+     }
+   ]
   // navigationStyle: 'custom',
   // navigationLinks: [
   //   {
