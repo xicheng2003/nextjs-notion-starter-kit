@@ -1,5 +1,7 @@
 import * as React from 'react'
 
+import { RiBilibiliFill } from '@react-icons/all-files/ri/RiBilibiliFill'
+// "react-icons/ri";
 import { FaEnvelopeOpenText } from '@react-icons/all-files/fa/FaEnvelopeOpenText'
 import { FaGithub } from '@react-icons/all-files/fa/FaGithub'
 import { FaLinkedin } from '@react-icons/all-files/fa/FaLinkedin'
@@ -52,6 +54,18 @@ export const FooterImpl: React.FC = () => {
       </div>
 
       <div className={styles.social}>
+        {config.bilibili && (
+          <a
+            className={styles.bilibili}
+            href={`https://space.bilibili.com/${config.bilibili}`}
+            title={`Bilibili @${config.bilibili}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <RiBilibiliFill />
+          </a>
+        )}
+        
         {config.twitter && (
           <a
             className={styles.twitter}
