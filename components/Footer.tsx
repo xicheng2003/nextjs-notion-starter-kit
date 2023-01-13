@@ -58,7 +58,7 @@ export const FooterImpl: React.FC = () => {
           <a
             className={styles.bilibili}
             href={`https://space.bilibili.com/${config.bilibili}`}
-            title={`Bilibili @${config.bilibili}`}
+            title={`Bilibili Uid${config.bilibili}`}
             target='_blank'
             rel='noopener noreferrer'
           >
