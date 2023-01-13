@@ -51,7 +51,7 @@ export const name: string = getSiteConfig('name')
 export const author: string = getSiteConfig('author')
 export const domain: string = getSiteConfig('domain')
 export const description: string = getSiteConfig('description', 'Notion Blog')
-export const language: string = getSiteConfig('language', 'en')
+export const language: string = getSiteConfig('language', 'zh')
 
 // social accounts
 export const bilibili: string | null = getSiteConfig('bilibili', null)
