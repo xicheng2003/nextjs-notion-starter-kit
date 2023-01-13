@@ -79,6 +79,13 @@
   border-color: #3b5998;
 }
 
+.bilibili .actionBgPane {
+  background: #3399ff;
+}
+.bilibili:hover {
+  border-color: #3399ff;
+}
+
 .twitter .actionBgPane {
   background: #2795e9;
 }
