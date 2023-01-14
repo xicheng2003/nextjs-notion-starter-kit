@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'Michael Lin',
 
   // open graph metadata (optional)
-  description: 'Example Next.js Notion Starter Kit Site',
+  description: '这里是晨曦的小天地～',
 
   // social usernames (optional)
   //twitter: 'transitive_bs',
