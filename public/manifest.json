@@ -16,7 +16,12 @@
       "src": "/favicon-192x192.png",
       "type": "image/png",
       "sizes": "192x192"
-    }
+    },
+    {
+      "src": "/favicon-300x300.png",
+      "type": "image/png",
+      "sizes": "300x300"
+    },
   ],
   "theme_color": "#000000",
   "background_color": "#000000",
