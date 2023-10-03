@@ -21,6 +21,7 @@ export default siteConfig({
   bilibili: '147530525',
   github: 'xicheng2003',
   linkedin: 'fisch2',
+  weibo:'3945899333',
   // mastodon: '#', // optional mastodon profile URL, provides link verification
   // newsletter: '#', // optional newsletter URL
   // youtube: '#', // optional youtube channel name or `channel/UCGbXXXXXXXXXXXXXXXXXXXXXX`
