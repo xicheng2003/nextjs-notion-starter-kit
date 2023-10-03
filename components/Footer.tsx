@@ -79,6 +79,18 @@ export const FooterImpl: React.FC = () => {
           </a>
         )}
 
+        {config.weibo && (
+          <a
+            className={styles.weibo}
+            href={`https://weibo.com/u/${config.weibo}`}
+            title={`Weibo ${config.weibo}`}
+            target='_blank'
+            rel='noopener noreferrer'
+          >
+            <FaWeibo />
+          </a>
+        )}
+
         {config.mastodon && (
           <a
             className={styles.mastodon}
