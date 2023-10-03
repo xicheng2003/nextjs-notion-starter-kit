@@ -56,6 +56,7 @@ export const language: string = getSiteConfig('language', 'zh')
 // social accounts
 export const bilibili: string | null = getSiteConfig('bilibili', null)
 export const twitter: string | null = getSiteConfig('twitter', null)
+export const weibo: string | null = getSiteConfig('weibo', null)
 export const mastodon: string | null = getSiteConfig('mastodon', null)
 export const github: string | null = getSiteConfig('github', null)
 export const youtube: string | null = getSiteConfig('youtube', null)
