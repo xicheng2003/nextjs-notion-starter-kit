@@ -97,6 +97,10 @@
   color: #2795e9;
 }
 
+.weibo:hover {
+  color: #c9510c;
+}
+
 .mastodon:hover {
   color: #5a4be1;
 }
