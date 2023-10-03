@@ -12,6 +12,7 @@ export interface SiteConfig {
 
   bilibili?:string
   twitter?: string
+  weibo?:string
   github?: string
   linkedin?: string
   newsletter?: string
