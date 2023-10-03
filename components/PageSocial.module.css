@@ -93,6 +93,13 @@
   border-color: #2795e9;
 }
 
+.weibo .actionBgPane {
+  background: #c9510c;
+}
+.weibo:hover {
+  border-color: #c9510c;
+}
+
 .linkedin .actionBgPane {
   background: #0077b5;
 }
@@ -101,10 +108,10 @@
 }
 
 .github .actionBgPane {
-  background: #c9510c;
+  background: #2795e9;
 }
 .github:hover {
-  border-color: #c9510c;
+  border-color: #2795e9;
 }
 
 .youtube .actionBgPane {
