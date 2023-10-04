@@ -283,7 +283,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
       
       {block.id.replace(/-/g, '') !== site.rootNotionPageId ?
         <Waline
-          serverURL='https://waline.imbytecat.com'
+          serverURL='https://waline.morlight.top'
           path={'/' + block.id.replace(/-/g, '')}
           emoji={[
             '//cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji'
