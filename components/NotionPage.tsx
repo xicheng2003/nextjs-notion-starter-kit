@@ -26,6 +26,7 @@ import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
+import { Waline } from './Comment'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -279,7 +280,20 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageAside={pageAside}
         footer={footer}
       />
-
+      
+      {block.id.replace(/-/g, '') !== site.rootNotionPageId ?
+        <Waline
+          serverURL='https://waline.imbytecat.com'
+          path={'/' + block.id.replace(/-/g, '')}
+          emoji={[
+            '//cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji'
+          ]}
+          dark={isDarkMode}
+          meta={['nick', 'mail']}
+          requiredMeta={['nick', 'mail']}
+          imageUploader={false}
+          copyright={false}
+        /> : null}
       
     </>
   )
