@@ -300,7 +300,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
     />
   ) : null}
   {/* 如果需要的话，您可以在 CommentBox 后面添加其他内容 */}
-    <Footer />
+    footer={footer}
     </NotionRenderer>
     
     </>
