@@ -28,3 +28,16 @@ export const PageAside: React.FC<{
 
   return <PageSocial />
 }
+      {block.id.replace(/-/g, '') !== site.rootNotionPageId ?
+        <Waline
+          serverURL='https://waline.morlight.top'
+          path={'/' + block.id.replace(/-/g, '')}
+          emoji={[
+            '//cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji'
+          ]}
+          dark={isDarkMode}
+          meta={['nick', 'mail']}
+          requiredMeta={['nick', 'mail']}
+          imageUploader={false}
+          copyright={false}
+        /> : null}
