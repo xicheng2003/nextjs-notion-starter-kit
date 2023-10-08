@@ -26,6 +26,7 @@ import { Page404 } from './Page404'
 import { PageAside } from './PageAside'
 import { PageHead } from './PageHead'
 import styles from './styles.module.css'
+import { Waline } from './Comment'
 
 // -----------------------------------------------------------------------------
 // dynamic imports for optional components
@@ -199,6 +200,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
     [block, recordMap, isBlogPost]
   )
 
+
+  
   const footer = React.useMemo(() => <Footer />, [])
 
   if (router.isFallback) {
@@ -280,6 +283,20 @@ export const NotionPage: React.FC<types.PageProps> = ({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
         footer={footer}
+        {block.id.replace(/-/g, '') !== site.rootNotionPageId ? (
+  <Waline
+    serverURL="https://waline.morlight.top"
+    path={'/' + block.id.replace(/-/g, '')}
+    emoji={[
+      '//cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji'
+    ]}
+    dark={isDarkMode}
+    meta={['nick', 'mail']}
+    requiredMeta={['nick', 'mail']}
+    imageUploader={false}
+    copyright={false}
+  />
+) : null}
       />
       
 
