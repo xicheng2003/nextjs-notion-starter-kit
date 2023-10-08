@@ -6,6 +6,7 @@ import { getPageTweet } from '@/lib/get-page-tweet'
 
 import { PageActions } from './PageActions'
 import { PageSocial } from './PageSocial'
+import { Waline } from './Comment'
 
 export const PageAside: React.FC<{
   block: Block
