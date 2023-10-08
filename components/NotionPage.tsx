@@ -283,24 +283,22 @@ export const NotionPage: React.FC<types.PageProps> = ({
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
         footer={footer}
-        {block.id.replace(/-/g, '') !== site.rootNotionPageId ? (
-  <Waline
-    serverURL="https://waline.morlight.top"
-    path={'/' + block.id.replace(/-/g, '')}
-    emoji={[
-      '//cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji'
-    ]}
-    dark={isDarkMode}
-    meta={['nick', 'mail']}
-    requiredMeta={['nick', 'mail']}
-    imageUploader={false}
-    copyright={false}
-  />
-) : null}
       />
-      
 
-      
+        {block.id.replace(/-/g, '') !== site.rootNotionPageId ? (
+    <Waline
+      serverURL='https://waline.morlight.top' // 变量serverURL填上自己搭建的waline链接
+      path={'/' + block.id.replace(/-/g, '')}
+      emoji={[
+        '//cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji'
+      ]}
+      dark={isDarkMode}
+      meta={['nick', 'mail']}
+      requiredMeta={['nick', 'mail']}
+      imageUploader={false}
+      copyright={false}
+    />
+  ) : null}
     </>
   )
 }
