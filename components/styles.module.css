@@ -54,7 +54,14 @@
   justify-content: space-between;
   align-items: center;
   position: relative;
+  z-index: 2; /* 较高的 z-index 值 */
 }
+
+/* 在评论框的样式中添加 z-index 属性 */
+.comment {
+  z-index: 1; /* 较低的 z-index 值 */
+}
+
 
 .copyright {
   font-size: 80%;
