@@ -300,7 +300,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
     />
   ) : null}
       
-    </>
     <Footer />
+    </>
+    
   )
 }
