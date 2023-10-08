@@ -59,6 +59,7 @@
 
 /* 在评论框的样式中添加 z-index 属性 */
 .comment {
+  width: 80%
   z-index: 2; 
   display: flex;/* 较低的 z-index 值 */
 }
