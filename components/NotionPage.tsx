@@ -278,10 +278,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
-        footer={footer}
-      />
-      
-      {block.id.replace(/-/g, '') !== site.rootNotionPageId ?
+        {block.id.replace(/-/g, '') !== site.rootNotionPageId ?
         <Waline
           serverURL='https://waline.morlight.top'
           path={'/' + block.id.replace(/-/g, '')}
@@ -294,6 +291,10 @@ export const NotionPage: React.FC<types.PageProps> = ({
           imageUploader={false}
           copyright={false}
         /> : null}
+        footer={footer}
+      />
+      
+
       
     </>
   )
