@@ -282,7 +282,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
-        footer={footer}
+       // footer={footer}
       />
 
         {block.id.replace(/-/g, '') !== site.rootNotionPageId ? (
@@ -299,7 +299,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
       copyright={false}
     />
   ) : null}
-      <Footer />
+      
     </>
+    <Footer />
   )
 }
