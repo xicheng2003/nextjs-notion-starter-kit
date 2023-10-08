@@ -255,7 +255,21 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
       {isLiteMode && <BodyClassName className='notion-lite' />}
       {isDarkMode && <BodyClassName className='dark-mode' />}
-
+       
+      {block.id.replace(/-/g, '') !== site.rootNotionPageId ?
+        <Waline
+          serverURL='https://waline.morlight.top'
+          path={'/' + block.id.replace(/-/g, '')}
+          emoji={[
+            '//cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji'
+          ]}
+          dark={isDarkMode}
+          meta={['nick', 'mail']}
+          requiredMeta={['nick', 'mail']}
+          imageUploader={false}
+          copyright={false}
+        /> : null}
+      
       <NotionRenderer
         bodyClassName={cs(
           styles.notion,
@@ -278,19 +292,6 @@ export const NotionPage: React.FC<types.PageProps> = ({
         mapImageUrl={mapImageUrl}
         searchNotion={config.isSearchEnabled ? searchNotion : null}
         pageAside={pageAside}
-        {block.id.replace(/-/g, '') !== site.rootNotionPageId ?
-        <Waline
-          serverURL='https://waline.morlight.top'
-          path={'/' + block.id.replace(/-/g, '')}
-          emoji={[
-            '//cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji'
-          ]}
-          dark={isDarkMode}
-          meta={['nick', 'mail']}
-          requiredMeta={['nick', 'mail']}
-          imageUploader={false}
-          copyright={false}
-        /> : null}
         footer={footer}
       />
       
