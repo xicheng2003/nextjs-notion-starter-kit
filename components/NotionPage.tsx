@@ -202,7 +202,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
 
   
-//  const footer = React.useMemo(() => <Footer />, [])
+  const footer = React.useMemo(() => <Footer />, [])
 
   if (router.isFallback) {
     return <Loading />
@@ -284,8 +284,8 @@ export const NotionPage: React.FC<types.PageProps> = ({
         pageAside={pageAside}
        // footer={footer}
       />
-
-        {block.id.replace(/-/g, '') !== site.rootNotionPageId ? (
+  {pageAside}
+  {block.id.replace(/-/g, '') !== site.rootNotionPageId ? (
     <Waline
       serverURL='https://waline.morlight.top' // 变量serverURL填上自己搭建的waline链接
       path={'/' + block.id.replace(/-/g, '')}
@@ -299,8 +299,10 @@ export const NotionPage: React.FC<types.PageProps> = ({
       copyright={false}
     />
   ) : null}
-      
+  {/* 如果需要的话，您可以在 CommentBox 后面添加其他内容 */}
     <Footer />
+    </NotionRenderer>
+    
     </>
     
   )
