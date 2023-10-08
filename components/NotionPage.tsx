@@ -202,7 +202,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
 
   
-  const footer = React.useMemo(() => <Footer />, [])
+//  const footer = React.useMemo(() => <Footer />, [])
 
   if (router.isFallback) {
     return <Loading />
