@@ -14,7 +14,7 @@ export default siteConfig({
   author: 'Michael Lin',
 
   // open graph metadata (optional)
-  description: '这里是晨曦的小天地～',
+  description: '这里是晨曦的个人博客站～',
 
   // social usernames (optional)
   //twitter: 'transitive_bs',
