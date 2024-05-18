@@ -60,10 +60,6 @@ export default siteConfig({
        pageId: 'a0046fa778e640728f429504fa632637'
      },
      {
-       title: 'Contact',
-       pageId: '6726a7bca83d4997b15ff5c6846fcad9'
-     }
-     {
        title: 'Mon.J',
        pageId: '6726a7bca83d4997b15ff5c6846fcad9'
      }
