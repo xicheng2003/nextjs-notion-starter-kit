@@ -56,11 +56,11 @@ export default siteConfig({
    navigationStyle: 'custom',
    navigationLinks: [
      {
-       title: '关于',
+       title: 'About.',
        pageId: 'a0046fa778e640728f429504fa632637'
      },
      {
-       title: '月刊',
+       title: 'Journal.',
        pageId: '6726a7bca83d4997b15ff5c6846fcad9'
      }
    ]
