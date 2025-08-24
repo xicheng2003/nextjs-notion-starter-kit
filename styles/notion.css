@@ -16,8 +16,10 @@
 
 .notion-page {
   font-family: 'Noto Serif SC', 'Noto Serif', 'KaiTi', '楷体', serif;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
   padding-bottom: calc(max(5vh, 32px)) !important;
-  line-height: 1.65;
 }
 
 .index-page {
@@ -26,7 +28,51 @@
 
 .notion-text {
   font-family: 'Noto Serif SC', 'Noto Serif', 'KaiTi', '楷体', serif;
+  font-size: 16px;
+  line-height: 1.75;
+  letter-spacing: 0.01em;
   padding: 0.5em 2px;
+}
+
+/* 确保文章段落间距一致 */
+.notion-text-block {
+  margin-bottom: 1em;
+}
+
+/* 标题样式保持 */
+.notion-h1,
+.notion-h2,
+.notion-h3 {
+  font-family: 'Noto Serif SC', 'Noto Serif', 'KaiTi', '楷体', serif;
+  line-height: 1.4;
+  margin-top: 1.5em;
+  margin-bottom: 0.25em;
+}
+
+.notion-h4,
+.notion-h5,
+.notion-h6 {
+  font-family: 'Noto Serif SC', 'Noto Serif', 'KaiTi', '楷体', serif;
+  line-height: 1.4;
+  margin-top: 1.5em;
+  margin-bottom: 0.5em;
+}
+
+/* 列表样式保持 */
+.notion-bulleted-list,
+.notion-numbered-list {
+  font-family: 'Noto Serif SC', 'Noto Serif', 'KaiTi', '楷体', serif;
+  line-height: 1.75;
+}
+
+/* 引用块样式保持 */
+.notion-quote {
+  font-family: 'Noto Serif SC', 'Noto Serif', 'KaiTi', '楷体', serif;
+  padding: 0.2em 0.75em;
+  line-height: 1.6;
+  font-style: italic;
+  font-size: 1.2em;
+  border-left: 4px solid #67bdfc;
 }
 
 .notion-asset-caption {
@@ -116,20 +162,6 @@
   .notion-collection-card-cover {
     transition: none 0ms linear;
   }
-}
-
-.notion-quote {
-  padding: 0.2em 0.75em;
-  line-height: 1.5;
-  font-style: italic;
-  font-size: 1.2em;
-  border-left: 4px solid #67bdfc;
-}
-
-.notion-h1,
-.notion-h2,
-.notion-h3 {
-  margin-bottom: 0.25em;
 }
 
 .notion-callout {
