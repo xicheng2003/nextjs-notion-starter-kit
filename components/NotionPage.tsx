@@ -201,7 +201,7 @@ export const NotionPage: React.FC<types.PageProps> = ({
   )
 
 
-  
+
 //  const footer = React.useMemo(() => <Footer />, [])
 
   if (router.isFallback) {
@@ -257,9 +257,9 @@ export const NotionPage: React.FC<types.PageProps> = ({
 
       {isLiteMode && <BodyClassName className='notion-lite' />}
       {isDarkMode && <BodyClassName className='dark-mode' />}
-       
 
-      
+
+
       <NotionRenderer
         bodyClassName={cs(
           styles.notion,
@@ -286,22 +286,24 @@ export const NotionPage: React.FC<types.PageProps> = ({
       />
 
         {block.id.replace(/-/g, '') !== site.rootNotionPageId ? (
-    <Waline
-      serverURL='https://waline.morlight.top' // 变量serverURL填上自己搭建的waline链接
-      path={'/' + block.id.replace(/-/g, '')}
-      emoji={[
-        '//cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji'
-      ]}
-      dark={isDarkMode}
-      meta={['nick', 'mail']}
-      requiredMeta={['nick', 'mail']}
-      imageUploader={false}
-      copyright={false}
-    />
-  ) : null}
-      
+          <div className={styles.comments}>
+            <Waline
+              serverURL='https://waline.morlight.top' // 变量serverURL填上自己搭建的waline链接
+              path={'/' + block.id.replace(/-/g, '')}
+              emoji={[
+                '//cdn.jsdelivr.net/gh/walinejs/emojis@1.1.0/tw-emoji'
+              ]}
+              dark={isDarkMode}
+              meta={['nick', 'mail']}
+              requiredMeta={['nick', 'mail']}
+              imageUploader={false}
+              copyright={false}
+            />
+          </div>
+        ) : null}
+
     <Footer />
     </>
-    
+
   )
 }
