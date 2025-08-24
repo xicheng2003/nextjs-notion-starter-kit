@@ -13,6 +13,7 @@
 }
 
 .notion-page {
+  font-family: 'KaiTi', '楷体', 'STKaiti', 'Times New Roman', 'Georgia', serif;
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
 }
@@ -22,6 +23,7 @@
 }
 
 .notion-text {
+  font-family: 'KaiTi', '楷体', 'STKaiti', 'Times New Roman', 'Georgia', serif;
   padding: 0.5em 2px;
 }
 
