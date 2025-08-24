@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;700&family=Noto+Serif:wght@400;700&display=swap');
+
 /**
  * This file contains site-specifc style overrides for Notion elements from
  * react-notion-x.
@@ -13,7 +15,7 @@
 }
 
 .notion-page {
-  font-family: 'KaiTi', '楷体', 'STKaiti', 'Times New Roman', 'Georgia', serif;
+  font-family: 'Noto Serif SC', 'Noto Serif', 'KaiTi', '楷体', serif;
   padding-bottom: calc(max(5vh, 32px)) !important;
   line-height: 1.65;
 }
@@ -23,7 +25,7 @@
 }
 
 .notion-text {
-  font-family: 'KaiTi', '楷体', 'STKaiti', 'Times New Roman', 'Georgia', serif;
+  font-family: 'Noto Serif SC', 'Noto Serif', 'KaiTi', '楷体', serif;
   padding: 0.5em 2px;
 }
 
