@@ -59,6 +59,8 @@
   /* 添加主题响应样式 */
   color: var(--fg-color);
   background-color: var(--bg-color);
+  border-top: 1px solid var(--fg-color-0);
+  min-height: 60px;
 }
 
 /* 在评论框的样式中添加 z-index 属性 */
@@ -144,6 +146,14 @@
   width: 100%;
   margin-top: 2em;
   border-top: 1px solid var(--fg-color-0);
+  background-color: var(--bg-color);
+  color: var(--fg-color);
+  padding: 1em 0;
+  min-height: 200px;
+}
+
+/* 确保评论组件内部没有空白 */
+.comments > div {
   background-color: var(--bg-color);
   color: var(--fg-color);
 }

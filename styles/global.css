@@ -19,6 +19,22 @@ body {
     'Droid Sans', 'Helvetica Neue', 'Noto Sans', sans-serif;
   font-family: var(--notion-font);
   overflow-x: hidden;
+
+  /* 添加基础CSS变量定义，确保主题切换正常工作 */
+  --bg-color: #ffffff;
+  --fg-color: #37352f;
+  --bg-color-1: #f7f6f3;
+  --fg-color-0: #787774;
+  --fg-color-6: #e3e2e0;
+}
+
+/* 暗色主题变量 */
+.dark-mode {
+  --bg-color: #2d3439;
+  --fg-color: #ffffff;
+  --bg-color-1: #1f2027;
+  --fg-color-0: #787774;
+  --fg-color-6: #37352f;
 }
 
 .static-tweet blockquote {
